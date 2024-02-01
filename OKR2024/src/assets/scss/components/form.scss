@@ -1,0 +1,36 @@
+.inp_wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .chk {
+        label {
+            font-size: 14px;
+            color: #1a1a1a;
+            background: url('/src/assets/images/icon/ico-chk-off.png') no-repeat left center;
+            padding-left: 25px;
+            cursor: pointer;
+        }
+        input {
+            display: none;
+            &:checked + label {
+                background-image: url('/src/assets/images/icon/ico-chk-on.png');
+            }
+        }
+    }
+
+    .rdo {
+        label {
+            font-size: 14px;
+            color: #1a1a1a;
+            background: url('/src/assets/images/icon/ico-rdo-off.png') no-repeat left center;
+            padding-left: 25px;
+            cursor: pointer;
+        }
+        input {
+            display: none;
+            &:checked + label {
+                background-image: url('/src/assets/images/icon/ico-rdo-on.png');
+            }
+        }
+    }
+}
