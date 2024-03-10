@@ -7,6 +7,7 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+import elementComp from '@/components/elements/index.js'
 library.add(faXmark, faBars)
 
 // const app = createApp(App).mount('#app');
@@ -15,3 +16,4 @@ app.use(hljsVuePlugin);
 app.use(router);
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app');
+app.use(elementComp);

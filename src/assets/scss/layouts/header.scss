@@ -1,4 +1,4 @@
-.pub_header {
+.pub_header::v-deep {
     position: fixed;
     left: 0;
     top: 0;
@@ -17,12 +17,14 @@
         color: #3261aa;
         overflow: hidden;
     }
-    &_gnbClose { 
-        &::before {
-            content: '\f00d';
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            font-size: 20px;
-        }
+    .pub_header_gnbClose {
+        background-color: red;
     }
+    &_gnbClose {
+        background-color: yellow;
+    }
+}
+
+.pub_header:deep(.pub_header_gnbClose) {
+    background-color: #3261aa;
 }

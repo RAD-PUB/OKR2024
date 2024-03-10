@@ -2,9 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 
 // 연결할 각 컴포넌트 import
 import Content from '@/layouts/Content.vue';
-import Swiper from '@/components/SwiperComp.vue'
-import Pagination from '@/components/Pagination.vue'
-import Form from '@/components/Form.vue'
+import SwiperPage from '@/pages/SwiperPage.vue'
+import BtnPage from '@/pages/BtnPage.vue'
+import PaginationPage from '@/pages/PaginationPage.vue'
+import FormPage from '@/pages/FormPage.vue'
 
 let routes = [
     {
@@ -13,16 +14,20 @@ let routes = [
     },
     {
         path: "/swiper",
-        component: Swiper
+        component: SwiperPage
+    },
+    {
+        path : "/btn",
+        component: BtnPage
     },
     {
         path: "/pagination",
-        component: Pagination
+        component: PaginationPage
     },
     {
         path: "/form",
-        component: Form
-    }
+        component: FormPage
+    },
 ]
 
 let router = createRouter({

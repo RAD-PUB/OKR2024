@@ -1,18 +1,25 @@
-pre code.hljs {
-    line-height: 20px;
-    margin-top: 50px;
-}
+.guide {
+    &_tit {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
 
-.guide_tit {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+    &_sub_tit {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
 
-.guide_sub_tit {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    &_wrap{
+        & + .guide_wrap {
+            margin-top: 30px;
+        }
+        pre code.hljs {
+            line-height: 20px;
+            margin-top: 30px;
+        }
+    }
 }
 
 .container {

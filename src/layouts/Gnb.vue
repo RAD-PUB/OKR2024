@@ -22,6 +22,14 @@ export default {
                 gnb: "Swiper"
             },
             {
+                path: "/btn",
+                gnb: "Btn"
+            },
+            {
+                path: "/pagination",
+                gnb: "Pagination"
+            },
+            {
                 path: "/form",
                 gnb: "Form"
             },
@@ -40,10 +48,6 @@ export default {
             {
                 path: "/treemenu",
                 gnb: "Tree Menu"
-            },
-            {
-                path: "/pagination",
-                gnb: "Pagination"
             },
         ],
         // 이모지 배열

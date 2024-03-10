@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 // layout
-@use 'layouts/header.scss';
+// @use 'layouts/header.scss';
 @use 'layouts/gnb.scss';
 
 // base
@@ -10,5 +10,3 @@
 
 // component
 @use 'components/swiper.scss';
-@use 'components/pagination.scss';
-@use 'components/form.scss';

@@ -1,8 +1,7 @@
 <template>
     <header class="pub_header">
         <button type="button" @click="gnbClose" class="pub_header_gnbClose">
-            <!-- <font-awesome-icon icon="fa-solid fa-xmark" /> -->
-            <!-- <font-awesome-icon icon="fa-solid fa-bars" /> -->
+            <font-awesome-icon icon="fa-solid fa-xmark" />
         </button>
         <h1>VUE 컴포넌트 가이드</h1>
     </header>
@@ -19,3 +18,7 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@styles/layouts/header.scss'
+</style>
