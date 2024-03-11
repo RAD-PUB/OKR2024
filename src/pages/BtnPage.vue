@@ -2,7 +2,11 @@
     <section>
         <h2 class="guide_tit">Btn</h2>
         <div class="guide_wrap">
-            <h3 class="guide_sub_tit"><span>Component Composition</span></h3>
+            <h3 class="guide_sub_tit"><span>Usage</span></h3>
+            <Btn 
+                btnName="primary"
+                className="primary"
+            />
             <highlightjs
                 language="js"
                 code="
@@ -102,6 +106,112 @@
                     }
                 "
             />
+        </div>
+        <div class="guide_wrap">
+            <h3 class="guide_sub_tit"><span>Props</span></h3>
+            <table class="props_tbl">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>id</b></td>
+                        <td>String</td>
+                        <td>btn + _uid</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 id 값 지정</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>type</b></td>
+                        <td>String</td>
+                        <td>button</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 타입 지정</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>className</b></td>
+                        <td>String</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>클래스 명 지정</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>btnName</b></td>
+                        <td>String</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 명 지정</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>disabled</b></td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 활성화 상태 지정</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>textLink</b></td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 태그 지정(button, a)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>linkUrl</b></td>
+                        <td>String</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>a태그 href 속성 값 지정</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="guide_wrap">
+            <h3 class="guide_sub_tit"><span>Events</span></h3>
+            <table class="props_tbl">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>btnClick</b></td>
+                        <td>[Boolean]</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p>버튼 클릭 시 발생</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="guide_wrap">
             <h3 class="guide_sub_tit">primary / medium <span>(button tag)</span></h3>
