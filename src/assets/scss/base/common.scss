@@ -39,3 +39,47 @@
         width: 100%;
     }
 }
+
+.props_tbl {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+
+    thead {
+        th {
+            height: 48px;
+            padding: 0 16px;
+            border-bottom: 1px solid #dcdcdc;
+            vertical-align: middle;
+            text-align: left;
+            font-weight: 700;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: #fafafa;
+            }
+            td {
+                height: 44px;
+                padding: 0 16px;
+                border-bottom: 1px solid #dcdcdc;
+                vertical-align: middle;
+
+                b {
+                    color: #1867c0;
+                    font-weight: 700;
+                }
+
+                &[colspan] {
+                    padding-top: 16px;
+
+                    p {
+                        margin-bottom: 16px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
